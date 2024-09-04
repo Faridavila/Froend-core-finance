@@ -16,6 +16,7 @@ import illustrationsDark from '@src/assets/images/pages/forgot-password-v2-dark.
 
 // ** Styles
 import '@styles/react/pages/page-authentication.scss'
+import React from 'react'
 
 const ForgotPassword = () => {
   // ** Hooks

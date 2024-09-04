@@ -13,6 +13,7 @@ import PublicRoute from '@components/routes/PublicRoute'
 
 // ** Utils
 import { isObjEmpty } from '@utils'
+import React from 'react'
 
 const getLayout = {
   blank: <BlankLayout />,

@@ -1,3 +1,4 @@
+import React from 'react'
 import { Mail, Home } from 'react-feather'
 
 export default [
@@ -14,9 +15,9 @@ export default [
     navLink: '/second-page'
   },
   {
-    id: 'PUC',
-    title: 'PUC',
+    id: 'department',
+    title: 'Departamento',
     icon: <Mail size={20} />,
-    navLink: '/PUC'
+    navLink: '/department'
   }
 ]
