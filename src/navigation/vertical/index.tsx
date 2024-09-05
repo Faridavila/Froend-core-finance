@@ -15,9 +15,15 @@ export default [
     navLink: '/second-page'
   },
   {
-    id: 'department',
-    title: 'Departamento',
+    id: 'tabla',
+    title: 'Tabla',
     icon: <Mail size={20} />,
-    navLink: '/department'
+    navLink: '/tabla'
+  },
+  {
+    id: 'nuevoTREE',
+    title: 'arbol',
+    icon: <Mail size={20} />,
+    navLink: '/nuevoTREE'
   }
 ]

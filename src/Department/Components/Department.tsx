@@ -12,7 +12,7 @@ import {
 } from '../API/DepartmentAPI';
 import React from "react";
 
-const DepartmentCRUD = () => {
+const Department = () =>  {
   const itemTemplate = (): DepartmentTypes => ({
     id: 0,
     departmentCode: 0, 
@@ -20,7 +20,8 @@ const DepartmentCRUD = () => {
     status: '',
   });
 
-  const columns: { key: keyof DepartmentTypes; 
+  const columns: { 
+    key: keyof DepartmentTypes; 
     label: string; 
     hidden?: boolean; 
     required?: boolean; 
@@ -33,19 +34,17 @@ const DepartmentCRUD = () => {
     { key: 'departmentName', label: 'Nombre', required: true, minLength: 2, maxLength: 100, regex: /^[A-Za-z\s]+$/ },
     { key: 'status', label: 'Estado', required: true, minLength: 2, maxLength: 50, regex: /^[A-Za-z\s]+$/ }
   ];
-  
 
-
-  const actions = (item: DepartmentTypes,handleEdit: (item: DepartmentTypes) => void,handleDelete: (id: number) => void) => (
+  const actions = (item: DepartmentTypes, handleEdit: (item: DepartmentTypes) => void, handleDelete: (id: number) => void) => (
     <>
       <Button
-        style={{ border: 'none', marginRight: '10px', padding: '5px 10px', fontSize: '12px',height: '30px' }}
+        style={{ border: 'none', marginRight: '10px', padding: '5px 10px', fontSize: '12px', height: '30px' }}
         onClick={() => handleEdit(item)}
       >
         <EditIcon />
       </Button>
       <Button
-        style={{ border: 'none', marginRight: '10px', padding: '5px 10px', fontSize: '12px',height: '30px' }}
+        style={{ border: 'none', marginRight: '10px', padding: '5px 10px', fontSize: '12px', height: '30px' }}
         variant='danger'
         onClick={() => handleDelete(item.id)}
       >
@@ -55,10 +54,8 @@ const DepartmentCRUD = () => {
   );
  
   const renderCustomFormField = (colKey: keyof DepartmentTypes, value: string, onChange: (newValue: string) => void) => {
-    
-    return null;
+    return null;  // Retorna null si no necesitas campos personalizados
   };
-  
 
   return (
     <div className="app-content content">
@@ -93,5 +90,4 @@ const DepartmentCRUD = () => {
   );
 };
 
-
-export default DepartmentCRUD;
+export default Department;

@@ -1,5 +1,5 @@
-// Logo Import
-import logo from '@src/assets/images/logo/logo.svg'
+import React from 'react' 
+import logo from '../assets/images/logo/logo.svg'
 
 // You can customize the template with the help of this file
 

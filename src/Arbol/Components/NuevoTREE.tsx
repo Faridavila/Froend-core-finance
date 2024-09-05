@@ -15,7 +15,7 @@ import AccountingTree from './treeNUevo';
 import { TreeNode } from '../Types/PUCType';
 import { FaRoad } from 'react-icons/fa';
 
-const TreePUC: React.FC = () => {
+const NuevoTREE = () => {
   const [treeData, setTreeData] = useState<TreeNode[]>([]);
   const [selectedNodes, setSelectedNodes] = useState<{ [key: number]: TreeNode | null }>({
     1: null,
@@ -448,4 +448,4 @@ const TreePUC: React.FC = () => {
   );
 };
 
-export default TreePUC;
+export default NuevoTREE;
